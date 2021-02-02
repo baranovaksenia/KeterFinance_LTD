@@ -40,7 +40,9 @@ ol {
     width: 100%;
     height: auto;
 }
-
+.text-center {
+    text-align: center;
+}
 
 /* Container */
 .container {
@@ -529,5 +531,57 @@ ol {
     &__col {
         padding: 0 15px;
         width: 33.333%;
+    }
+}
+
+/* Mission */
+.mission-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 90px;
+    text-align: center;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.05);
+    text-transform: uppercase;
+}
+.mission {
+    position: relative;
+    top: -23px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding: 60px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.16);
+    &:before,
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 41.6666%;
+        height: 2px;
+        z-index: 1;
+    }
+    &:before {
+        background-color: #004AF2;
+        right: 50%;
+    }
+    &::after {
+        background-color: #FC2C2B;
+        left: 50%;
+
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #004AF2;
+        margin-bottom: 5px;
+    }
+    &__subtitle {
+        font-size: 21px;
+        color: #585858;
     }
 }
